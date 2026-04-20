@@ -24,7 +24,6 @@
         align-items: center;
         justify-content: center;
 
-        /* 🔥 視覺微上移（上下更平衡） */
         transform: translateY(-1vh) scale(1.12);
 
         transition: transform 2s linear;
@@ -61,7 +60,7 @@
     .time {
         font-size: 14vmin;
         font-weight: bold;
-        letter-spacing: 0.05em; /* 🔥 更高级一点 */
+        letter-spacing: 0.05em;
     }
 </style>
 </head>
@@ -107,7 +106,6 @@ function updateClock() {
         `${hour}:${minute}:${second}`;
 }
 
-// 🔥 防燒屏（保留上移效果）
 function moveSlightly() {
     const maxOffset = 10;
 
